@@ -14,34 +14,34 @@ export default function SEOPage() {
   const tiers = [
     {
       name: "Starter",
-      price: "3 Juta",
-      duration: "/bulan",
-      target: "Bisnis baru yang mulai fokus SEO",
+      price: "3 million",
+      duration: "/month",
+      target: "New businesses beginning to focus on SEO",
       features: ["10 keywords target", "AI keyword research", "On-page optimization", "Technical SEO audit", "Google Search Console setup", "Monthly reports", "Basic competitor analysis", "Email support"],
     },
     {
       name: "Growth",
-      price: "6 Juta",
-      duration: "/bulan",
+      price: "6 million",
+      duration: "/month",
       popular: true,
-      target: "Bisnis yang butuh pertumbuhan organik signifikan",
-      features: ["25 keywords target", "Full on-page & off-page optimization", "4 artikel/bulan + AI enhancement", "10 quality backlinks/bulan", "Bi-weekly reports & dashboard", "Detailed competitor analysis", "WhatsApp priority support"],
+      target: "Businesses seeking significant organic growth",
+      features: ["25 target keywords", "Full on-page & off-page optimization", "4 articles/month + AI enhancement", "10 quality backlinks/month", "Biweekly reports & dashboard", "Detailed competitor analysis", "Priority WhatsApp support"],
     },
     {
       name: "Scale",
-      price: "12 Juta",
-      duration: "/bulan",
-      target: "Target agresif di market kompetitif",
-      features: ["Unlimited keywords target", "Complete technical SEO", "10 artikel/bulan + AI optimization", "25 quality backlinks/bulan", "Local SEO & schema markup", "Weekly dashboard & strategy calls", "Dedicated SEO specialist", "Monthly strategy review"],
+      price: "12 million",
+      duration: "/month",
+      target: "Aggressive goals in a competitive market",
+      features: ["Unlimited target keywords", "Complete technical SEO", "10 articles/month + AI optimization", "25 quality backlinks/month", "Local SEO & schema markup", "Weekly dashboard & strategy calls", "Dedicated SEO specialist", "Monthly strategy review"],
     },
   ];
 
   const faqs = [
-    { q: "Berapa lama hasil SEO terlihat?", a: "Hasil awal biasanya terlihat dalam 1-2 bulan. Peningkatan signifikan dalam 3-6 bulan tergantung kompetisi keyword dan kondisi website saat ini." },
-    { q: "Apa bedanya AI keyword research dengan tools biasa?", a: "AI kami menganalisis search intent, semantic keywords, dan peluang tersembunyi yang sering terlewat oleh tools tradisional. Hasilnya, coverage topik 2x lebih comprehensive." },
-    { q: "Apakah ada jaminan ranking #1?", a: "Tidak ada yang bisa menjamin ranking #1 secara pasti. Kami fokus pada best practices dan continuous improvement yang terbukti memberikan hasil di 95% klien kami." },
-    { q: "Apakah artikel sudah termasuk?", a: "Ya, paket Growth sudah termasuk 4 artikel/bulan dan Scale 10 artikel/bulan. Semua ditulis oleh professional writer dan dioptimasi dengan AI." },
-    { q: "Bisa pause atau stop layanan?", a: "Ya, dengan notice 2 minggu sebelumnya. Kontrak minimum 3 bulan untuk memastikan SEO mendapat waktu cukup menunjukkan hasil." },
+    { q: "How long does SEO take to show results?", a: "Initial results usually appear within 1–2 months. Significant improvement typically takes 3–6 months, depending on keyword competition and your website's current state." },
+    { q: "How is AI keyword research different from standard tools?", a: "Our AI analyzes search intent, semantic keywords, and overlooked opportunities. The result is twice the topic coverage of traditional SEO tools." },
+    { q: "Do you guarantee a #1 ranking?", a: "No one can guarantee a #1 ranking. We focus on best practices and continuous improvement, which have delivered results for 95% of our clients." },
+    { q: "Are articles included?", a: "Yes. Growth includes 4 articles/month, and Scale includes 10 articles/month. All are written by professional writers and optimized with AI." },
+    { q: "Can I pause or cancel the service?", a: "Yes, with two weeks' notice. There is a three-month minimum commitment to give SEO enough time to show results." },
   ];
 
   const currentTier = tiers[activeTier];
@@ -55,7 +55,7 @@ export default function SEOPage() {
           {/* FaultyTerminal Background */}
           <div className="absolute inset-0">
             <FaultyTerminal
-              tint="#6106DF"
+              tint="#2563EB"
               scale={2.5}
               gridMul={[2, 1]}
               digitSize={1.5}
@@ -106,20 +106,20 @@ export default function SEOPage() {
 
             {/* Main Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Jasa SEO & Content Marketing
+              SEO & Content Marketing Services
             </h1>
 
             {/* Subtitle */}
             <h2
               className="text-xl md:text-2xl lg:text-3xl font-medium text-white mb-6"
-              style={{ textShadow: "0 0 20px rgba(97, 6, 223, 0.8), 0 0 40px rgba(97, 6, 223, 0.4)" }}
+              style={{ textShadow: "0 0 20px rgba(37, 99, 235, 0.8), 0 0 40px rgba(37, 99, 235, 0.4)" }}
             >
-              Mulai Rp 3 Juta/bulan
+              Starting at Rp 3 million/month
             </h2>
 
             {/* Description */}
             <p className="text-base md:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-              Tingkatkan ranking Google dengan strategi SEO berbasis AI — keyword research otomatis, content optimization, dan quality link building untuk pertumbuhan organik berkelanjutan
+              Improve your Google rankings with an AI-powered SEO strategy — automated keyword research, content optimization, and quality link building for sustainable organic growth
             </p>
           </div>
         </section>
@@ -131,8 +131,8 @@ export default function SEOPage() {
 
           <div className="max-w-[1100px] mx-auto px-6 md:px-16 relative">
             <div className="text-center mb-10">
-              <h2 className="text-2xl font-bold text-white mb-2">Pilih Paket SEO Anda</h2>
-              <p className="text-sm text-white/60">Klik paket untuk melihat detail lengkap</p>
+              <h2 className="text-2xl font-bold text-white mb-2">Choose Your SEO Package</h2>
+              <p className="text-sm text-white/60">Select a package to view all the details</p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -144,7 +144,7 @@ export default function SEOPage() {
                     onClick={() => setActiveTier(i)}
                     className={`w-full text-left p-5 rounded-xl transition-all border ${
                       activeTier === i
-                        ? "bg-gradient-to-r from-primary/15 to-transparent border-primary shadow-[0_0_20px_rgba(97,6,223,0.15)]"
+                        ? "bg-gradient-to-r from-primary/15 to-transparent border-primary shadow-[0_0_20px_rgba(37,99,235,0.15)]"
                         : "border-white/10 bg-white/[0.02] hover:border-primary/30"
                     }`}
                   >
@@ -189,7 +189,7 @@ export default function SEOPage() {
                   </div>
 
                   <div className="border-t border-white/10 pt-6 mb-8 flex-1">
-                    <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Yang Anda Dapatkan</h4>
+                    <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">What You Get</h4>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {currentTier.features.map((f) => (
                         <li key={f} className="flex items-start gap-3 text-sm text-white/70">
@@ -204,16 +204,16 @@ export default function SEOPage() {
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href="https://wa.me/6285280452688" target="_blank" className="flex-1 text-center px-6 py-3.5 bg-primary text-white rounded-full font-medium text-sm hover:bg-primary/90 transition-all">
-                      Mulai {currentTier.name}
+                      Choose {currentTier.name}
                     </a>
                     <a href="/pricing" className="flex-1 text-center px-6 py-3.5 border border-white/20 text-white rounded-full font-medium text-sm hover:border-primary/50 hover:bg-primary/[0.04] transition-all">
-                      Bandingkan Semua Layanan
+                      Compare All Services
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <p className="text-xs text-white/50 text-center mt-6">Semua harga belum termasuk PPN 11%. Minimum kontrak 3 bulan.</p>
+            <p className="text-xs text-white/50 text-center mt-6">All prices exclude 11% VAT. Three-month minimum commitment.</p>
           </div>
         </section>
 
@@ -222,7 +222,7 @@ export default function SEOPage() {
           <div className="max-w-[800px] mx-auto px-6 md:px-16 relative">
             <div className="bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 rounded-2xl p-8 text-center">
               <h2 className="text-xl font-bold text-white mb-3">AI-Powered Keyword Discovery</h2>
-              <p className="text-sm text-white/60 leading-relaxed">AI kami mengidentifikasi keyword opportunities yang terlewat kompetitor, menganalisis search intent, dan menghasilkan coverage topik <strong className="text-white">2x lebih comprehensive</strong> dibanding SEO tools tradisional.</p>
+              <p className="text-sm text-white/60 leading-relaxed">Our AI identifies keyword opportunities your competitors miss, analyzes search intent, and delivers <strong className="text-white">twice the topic coverage</strong> of traditional SEO tools.</p>
             </div>
           </div>
         </section>
@@ -238,17 +238,17 @@ export default function SEOPage() {
                 Services
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.15]">
-                Layanan yang Kami Berikan
+                Services We Provide
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
-                { title: "AI Keyword Research", desc: "Identifikasi peluang keyword tersembunyi dengan AI, termasuk long-tail dan semantic keywords" },
-                { title: "Content Creation & AI Optimization", desc: "Artikel ditulis professional writer dan dioptimasi AI untuk relevansi, readability, dan SEO" },
-                { title: "Quality Link Building", desc: "Backlink dari sumber berkualitas dan relevan untuk meningkatkan domain authority" },
-                { title: "Technical SEO Audit", desc: "Audit komprehensif — site speed, crawlability, mobile-friendliness, structured data" },
-                { title: "Transparent Reporting", desc: "Dashboard real-time dengan metrik ranking, traffic, dan actionable insights" },
-                { title: "Competitor Analysis", desc: "Analisis strategi kompetitor untuk menemukan celah dan peluang yang bisa dimanfaatkan" },
+                { title: "AI Keyword Research", desc: "Uncover hidden keyword opportunities with AI, including long-tail and semantic keywords" },
+                { title: "Content Creation & AI Optimization", desc: "Articles written by professional writers and optimized with AI for relevance, readability, and SEO" },
+                { title: "Quality Link Building", desc: "Relevant, high-quality backlinks to strengthen your domain authority" },
+                { title: "Technical SEO Audit", desc: "Comprehensive audit of site speed, crawlability, mobile-friendliness, and structured data" },
+                { title: "Transparent Reporting", desc: "Real-time dashboard with ranking and traffic metrics plus actionable insights" },
+                { title: "Competitor Analysis", desc: "Analyze competitor strategies to identify gaps and opportunities" },
               ].map((f) => (
                 <div key={f.title} className="p-6 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-primary/40 hover:bg-primary/[0.04] transition-all duration-300 group">
                   <h3 className="text-white font-semibold mb-2">{f.title}</h3>
@@ -270,18 +270,18 @@ export default function SEOPage() {
                 Process
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.15]">
-                Proses Kerja
+                Our Process
               </h2>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { step: "Audit", desc: "Analisis website, kompetitor, dan keyword" },
-                { step: "Strategy", desc: "SEO roadmap dan target prioritization" },
-                { step: "Execute", desc: "Implementasi dan pembuatan konten" },
-                { step: "Optimize", desc: "Monitoring dan continuous improvement" },
+                { step: "Audit", desc: "Analyze your website, competitors, and keywords" },
+                { step: "Strategy", desc: "Build an SEO roadmap and prioritize targets" },
+                { step: "Execute", desc: "Implement the strategy and create content" },
+                { step: "Optimize", desc: "Monitor performance and continuously improve" },
               ].map((s, i) => (
                 <div key={s.step} className="text-center border border-white/10 bg-white/[0.02] rounded-xl p-5">
-                  <div className="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full font-bold mx-auto mb-3 shadow-[0_4px_15px_rgba(97,6,223,0.3)]">{i + 1}</div>
+                  <div className="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full font-bold mx-auto mb-3 shadow-[0_4px_15px_rgba(37,99,235,0.3)]">{i + 1}</div>
                   <h3 className="text-white font-semibold text-sm mb-1">{s.step}</h3>
                   <p className="text-xs text-white/60 leading-relaxed">{s.desc}</p>
                 </div>
@@ -301,7 +301,7 @@ export default function SEOPage() {
                 FAQ
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.15]">
-                Pertanyaan Umum
+                Frequently Asked Questions
               </h2>
             </div>
             <div className="space-y-2">
@@ -335,16 +335,16 @@ export default function SEOPage() {
               Get Started
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight leading-[1.15]">
-              Siap Ranking #1 di Google?
+              Ready to Rank #1 on Google?
             </h2>
             <p className="text-base text-white/70 mb-8 leading-relaxed">
-              Dapatkan free SEO audit untuk website Anda. Kami tunjukkan peluang yang bisa langsung dioptimasi.
+              Get a free SEO audit for your website. We'll show you opportunities you can optimize right away.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <a href="https://wa.me/6285280452688" target="_blank" className="px-8 py-3.5 bg-primary text-white rounded-full font-medium text-sm hover:bg-primary/90 transition-all">Chat via WhatsApp</a>
-              <a href="mailto:contact@ashari.tech" className="px-8 py-3.5 border border-white/20 text-white rounded-full font-medium text-sm hover:border-primary/50 hover:bg-primary/[0.04] transition-all">Email Kami</a>
+              <a href="mailto:contact@ashari.tech" className="px-8 py-3.5 border border-white/20 text-white rounded-full font-medium text-sm hover:border-primary/50 hover:bg-primary/[0.04] transition-all">Email Us</a>
             </div>
-            <p className="text-xs text-white/50 mt-6">Melayani seluruh Indonesia — Jakarta, Surabaya, Bandung, Medan, Semarang</p>
+            <p className="text-xs text-white/50 mt-6">Serving all of Indonesia — Jakarta, Surabaya, Bandung, Medan, Semarang</p>
           </div>
         </section>
       </main>

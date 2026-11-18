@@ -14,37 +14,37 @@ export default function WebsitePage() {
   const tiers = [
     {
       name: "Starter",
-      price: "2.5 Juta",
+      price: "2.5 million",
       duration: "One-time",
-      target: "Bisnis baru yang butuh kehadiran online profesional",
-      features: ["1-5 halaman, mobile-responsive", "Basic SEO & contact forms", "WhatsApp integration", "1 bulan AI chatbot trial", "SSL certificate", "1 revisi included", "1 tahun hosting & domain"],
-      timeline: "5-7 hari kerja",
+      target: "New businesses that need a professional online presence",
+      features: ["1–5 mobile-responsive pages", "Basic SEO & contact forms", "WhatsApp integration", "1-month AI chatbot trial", "SSL certificate", "1 revision included", "1 year of hosting & domain"],
+      timeline: "5–7 business days",
     },
     {
       name: "Professional",
-      price: "5 Juta",
+      price: "5 million",
       duration: "One-time",
       popular: true,
-      target: "Bisnis yang butuh website lengkap dengan fitur advanced",
-      features: ["6-10 halaman, custom branding", "Full SEO optimization", "CMS included (kelola konten sendiri)", "3 bulan AI chatbot access", "Google Analytics & tracking setup", "Blog dan portfolio galleries", "3 revisi, training included"],
-      timeline: "10-14 hari kerja",
+      target: "Businesses that need a complete website with advanced features",
+      features: ["6–10 pages with custom branding", "Full SEO optimization", "CMS included (manage your own content)", "3 months of AI chatbot access", "Google Analytics & tracking setup", "Blog and portfolio galleries", "3 revisions and training included"],
+      timeline: "10–14 business days",
     },
     {
       name: "Enterprise",
-      price: "12 Juta+",
+      price: "12 million+",
       duration: "One-time",
-      target: "Bisnis besar dengan kebutuhan custom & kompleks",
-      features: ["Unlimited halaman", "Premium custom design", "1 tahun AI chatbot access", "E-commerce & payment gateway", "Multi-language support", "Custom API integrations", "Unlimited revisi, priority support", "Monthly maintenance included"],
-      timeline: "3-4 minggu",
+      target: "Large businesses with complex, custom requirements",
+      features: ["Unlimited pages", "Premium custom design", "1 year of AI chatbot access", "E-commerce & payment gateway", "Multilingual support", "Custom API integrations", "Unlimited revisions and priority support", "Monthly maintenance included"],
+      timeline: "3–4 weeks",
     },
   ];
 
   const faqs = [
-    { q: "Berapa lama pengerjaan website?", a: "Starter: 5-7 hari kerja, Professional: 10-14 hari kerja, Enterprise: 3-4 minggu. Timeline dimulai setelah konten dan referensi lengkap." },
-    { q: "Apakah saya bisa update konten sendiri?", a: "Ya, paket Professional dan Enterprise sudah termasuk CMS sehingga Anda bisa update konten sendiri. Kami juga menyediakan training penggunaan." },
-    { q: "Apakah ada biaya maintenance bulanan?", a: "Hosting dan domain gratis 1 tahun. Setelahnya, biaya perpanjangan mulai Rp 500K/tahun. Maintenance optional mulai Rp 500K/bulan." },
-    { q: "Bisa request fitur custom?", a: "Ya, fitur custom tersedia untuk semua paket. Harga menyesuaikan kompleksitas fitur yang diminta. Konsultasikan kebutuhan Anda." },
-    { q: "Bagaimana AI chatbot bekerja?", a: "AI chatbot kami di-train dengan informasi bisnis Anda untuk menjawab pertanyaan pengunjung 24/7 secara otomatis, meningkatkan engagement dan konversi." },
+    { q: "How long does it take to build a website?", a: "Starter: 5–7 business days; Professional: 10–14 business days; Enterprise: 3–4 weeks. The timeline starts once all content and references are ready." },
+    { q: "Can I update the content myself?", a: "Yes. Professional and Enterprise include a CMS so you can update content yourself. We also provide training." },
+    { q: "Is there a monthly maintenance fee?", a: "Hosting and domain are free for the first year. Renewal starts at Rp 500K/year. Optional maintenance starts at Rp 500K/month." },
+    { q: "Can I request custom features?", a: "Yes. Custom features are available with every package. Pricing depends on the complexity of the requested features. Contact us to discuss your needs." },
+    { q: "How does the AI chatbot work?", a: "We train the AI chatbot on your business information so it can automatically answer visitor questions 24/7, increasing engagement and conversions." },
   ];
 
   const currentTier = tiers[activeTier];
@@ -58,7 +58,7 @@ export default function WebsitePage() {
           {/* FaultyTerminal Background */}
           <div className="absolute inset-0">
             <FaultyTerminal
-              tint="#6106DF"
+              tint="#2563EB"
               scale={2.5}
               gridMul={[2, 1]}
               digitSize={1.5}
@@ -109,21 +109,21 @@ export default function WebsitePage() {
 
             {/* Main Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Jasa Pembuatan<br />
+              Website Design & Development<br />
               Website & Company Profile
             </h1>
 
             {/* Subtitle */}
             <h2
               className="text-xl md:text-2xl lg:text-3xl font-medium text-white mb-6"
-              style={{ textShadow: "0 0 20px rgba(97, 6, 223, 0.8), 0 0 40px rgba(97, 6, 223, 0.4)" }}
+              style={{ textShadow: "0 0 20px rgba(37, 99, 235, 0.8), 0 0 40px rgba(37, 99, 235, 0.4)" }}
             >
-              Mulai Rp 2.5 Juta
+              Starting at Rp 2.5 million
             </h2>
 
             {/* Description */}
             <p className="text-base md:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-              Tingkatkan kredibilitas bisnis dengan website modern yang dilengkapi AI chatbot untuk engagement lebih baik
+              Build business credibility with a modern website featuring an AI chatbot for better engagement
             </p>
           </div>
         </section>
@@ -135,8 +135,8 @@ export default function WebsitePage() {
 
           <div className="max-w-[1100px] mx-auto px-6 md:px-16 relative">
             <div className="text-center mb-10">
-              <h2 className="text-2xl font-bold text-white mb-2">Pilih Paket yang Sesuai</h2>
-              <p className="text-sm text-white/60">Klik paket untuk melihat detail lengkap</p>
+              <h2 className="text-2xl font-bold text-white mb-2">Choose the Right Package</h2>
+              <p className="text-sm text-white/60">Select a package to view all the details</p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -148,7 +148,7 @@ export default function WebsitePage() {
                     onClick={() => setActiveTier(i)}
                     className={`w-full text-left p-5 rounded-xl transition-all border ${
                       activeTier === i
-                        ? "bg-gradient-to-r from-primary/15 to-transparent border-primary shadow-[0_0_20px_rgba(97,6,223,0.15)]"
+                        ? "bg-gradient-to-r from-primary/15 to-transparent border-primary shadow-[0_0_20px_rgba(37,99,235,0.15)]"
                         : "border-white/10 bg-white/[0.02] hover:border-primary/30"
                     }`}
                   >
@@ -197,11 +197,11 @@ export default function WebsitePage() {
                       <circle cx="12" cy="12" r="10" />
                       <path d="M12 6v6l4 2" />
                     </svg>
-                    <span className="text-sm text-primary font-medium">Estimasi: {currentTier.timeline}</span>
+                    <span className="text-sm text-primary font-medium">Estimated timeline: {currentTier.timeline}</span>
                   </div>
 
                   <div className="border-t border-white/10 pt-6 mb-8 flex-1">
-                    <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Yang Anda Dapatkan</h4>
+                    <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">What You Get</h4>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {currentTier.features.map((f) => (
                         <li key={f} className="flex items-start gap-3 text-sm text-white/70">
@@ -216,16 +216,16 @@ export default function WebsitePage() {
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href="https://wa.me/6285280452688" target="_blank" className="flex-1 text-center px-6 py-3.5 bg-primary text-white rounded-full font-medium text-sm hover:bg-primary/90 transition-all">
-                      Pilih {currentTier.name}
+                      Choose {currentTier.name}
                     </a>
                     <a href="/pricing" className="flex-1 text-center px-6 py-3.5 border border-white/20 text-white rounded-full font-medium text-sm hover:border-primary/50 hover:bg-primary/[0.04] transition-all">
-                      Bandingkan Semua Layanan
+                      Compare All Services
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <p className="text-xs text-white/50 text-center mt-6">Semua harga belum termasuk PPN 11%. Hosting & domain included 1 tahun pertama.</p>
+            <p className="text-xs text-white/50 text-center mt-6">All prices exclude 11% VAT. Hosting & domain are included for the first year.</p>
           </div>
         </section>
 
@@ -233,8 +233,8 @@ export default function WebsitePage() {
         <section className="py-16 bg-black relative overflow-hidden">
           <div className="max-w-[800px] mx-auto px-6 md:px-16 relative">
             <div className="bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 rounded-2xl p-8 text-center">
-              <h2 className="text-xl font-bold text-white mb-3">Setiap Website Termasuk AI Chatbot Gratis</h2>
-              <p className="text-sm text-white/60 leading-relaxed">AI chatbot menjawab pertanyaan pengunjung 24/7. Meningkatkan engagement <strong className="text-white">40%</strong> dan mengurangi bounce rate. Tidak ada agency lain yang memberikan ini sebagai standar.</p>
+              <h2 className="text-xl font-bold text-white mb-3">Every Website Includes a Free AI Chatbot</h2>
+              <p className="text-sm text-white/60 leading-relaxed">The AI chatbot answers visitor questions 24/7, increasing engagement by <strong className="text-white">40%</strong> and reducing bounce rates. No other agency includes this as standard.</p>
             </div>
           </div>
         </section>
@@ -250,17 +250,17 @@ export default function WebsitePage() {
                 Features
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.15]">
-                Fitur yang Anda Dapatkan
+                Features Included
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
-                { title: "AI Chatbot 24/7", desc: "Chatbot cerdas yang di-train dengan info bisnis Anda, menjawab pertanyaan pengunjung otomatis" },
-                { title: "Mobile Responsive", desc: "Tampil sempurna di semua perangkat — desktop, tablet, dan smartphone" },
-                { title: "SEO Optimized", desc: "Struktur dan konten dioptimasi agar mudah ditemukan di Google" },
-                { title: "Fast Loading", desc: "Loading time di bawah 3 detik untuk pengalaman user terbaik dan ranking lebih tinggi" },
-                { title: "SSL & Security", desc: "SSL certificate gratis, 99.9% uptime guarantee, dan protection dari serangan umum" },
-                { title: "Support & Training", desc: "Pelatihan penggunaan CMS dan dukungan teknis via WhatsApp" },
+                { title: "AI Chatbot 24/7", desc: "An intelligent chatbot trained on your business information to answer visitor questions automatically" },
+                { title: "Mobile Responsive", desc: "Looks great on every device — desktop, tablet, and smartphone" },
+                { title: "SEO Optimized", desc: "Structure and content optimized to help customers find you on Google" },
+                { title: "Fast Loading", desc: "Loading times under 3 seconds for a better user experience and higher rankings" },
+                { title: "SSL & Security", desc: "Free SSL certificate, 99.9% uptime guarantee, and protection from common attacks" },
+                { title: "Support & Training", desc: "CMS training and technical support via WhatsApp" },
               ].map((f) => (
                 <div key={f.title} className="p-6 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-primary/40 hover:bg-primary/[0.04] transition-all duration-300 group">
                   <h3 className="text-white font-semibold mb-2">{f.title}</h3>
@@ -282,15 +282,15 @@ export default function WebsitePage() {
                 Process
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.15]">
-                Timeline Pengerjaan
+                Project Timeline
               </h2>
             </div>
             <div className="space-y-3">
               {[
-                { day: "Day 1", title: "Konsultasi", desc: "Diskusi requirements, target audience, referensi design, dan konten yang dibutuhkan" },
-                { day: "Day 2-3", title: "Design Mockup", desc: "Pembuatan mockup design untuk approval sebelum masuk tahap development" },
-                { day: "Day 4-6", title: "Development", desc: "Full website build, responsive testing, integrasi AI chatbot dan fitur lainnya" },
-                { day: "Day 7", title: "Launch & Training", desc: "Final review, hosting & domain setup, pelatihan penggunaan CMS, dan handover" },
+                { day: "Day 1", title: "Consultation", desc: "Discuss requirements, target audience, design references, and the content needed" },
+                { day: "Days 2–3", title: "Design Mockup", desc: "Create a design mockup for approval before development begins" },
+                { day: "Days 4–6", title: "Development", desc: "Build the website, test responsiveness, and integrate the AI chatbot and other features" },
+                { day: "Day 7", title: "Launch & Training", desc: "Final review, hosting and domain setup, CMS training, and handover" },
               ].map((s) => (
                 <div key={s.day} className="flex gap-4 items-start border border-white/10 bg-white/[0.02] rounded-xl p-5">
                   <span className="px-3 py-1.5 bg-primary/15 text-primary text-xs font-semibold rounded-full shrink-0 mt-0.5 border border-primary/20">{s.day}</span>
@@ -315,7 +315,7 @@ export default function WebsitePage() {
                 FAQ
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.15]">
-                Pertanyaan Umum
+                Frequently Asked Questions
               </h2>
             </div>
             <div className="space-y-2">
@@ -349,16 +349,16 @@ export default function WebsitePage() {
               Get Started
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight leading-[1.15]">
-              Siap Punya Website Profesional?
+              Ready for a Professional Website?
             </h2>
             <p className="text-base text-white/70 mb-8 leading-relaxed">
-              Konsultasi gratis tanpa komitmen. Kami bantu tentukan paket terbaik untuk bisnis Anda.
+              Get a free, no-obligation consultation. We'll help you choose the right package for your business.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <a href="https://wa.me/6285280452688" target="_blank" className="px-8 py-3.5 bg-primary text-white rounded-full font-medium text-sm hover:bg-primary/90 transition-all">Chat via WhatsApp</a>
-              <a href="mailto:contact@ashari.tech" className="px-8 py-3.5 border border-white/20 text-white rounded-full font-medium text-sm hover:border-primary/50 hover:bg-primary/[0.04] transition-all">Email Kami</a>
+              <a href="mailto:contact@ashari.tech" className="px-8 py-3.5 border border-white/20 text-white rounded-full font-medium text-sm hover:border-primary/50 hover:bg-primary/[0.04] transition-all">Email Us</a>
             </div>
-            <p className="text-xs text-white/50 mt-6">Melayani seluruh Indonesia — Jakarta, Surabaya, Bandung, Medan, Semarang</p>
+            <p className="text-xs text-white/50 mt-6">Serving all of Indonesia — Jakarta, Surabaya, Bandung, Medan, Semarang</p>
           </div>
         </section>
       </main>

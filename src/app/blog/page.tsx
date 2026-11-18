@@ -23,40 +23,40 @@ const blogPosts: BlogPost[] = [
     title: "Enterprise-Grade AI Solutions for Indonesian Businesses: The Ashari Tech Advantage",
     description: "Discover how growing Indonesian businesses can access enterprise-quality AI and software development without enterprise pricing...",
     category: "Business Strategy",
-    readTime: "12 menit",
-    date: "18 Januari 2026",
+    readTime: "12 min read",
+    date: "January 18, 2026",
     featured: true,
   },
   {
     slug: "5-proses-bisnis-otomasi-ai",
-    title: "5 Proses Bisnis yang Bisa Diotomasi AI (Tanpa Budget Besar)",
-    description: "Discover 5 operational processes yang paling cocok untuk AI automation tanpa memerlukan investasi besar...",
+    title: "5 Business Processes You Can Automate with AI (Without a Big Budget)",
+    description: "Discover five operational processes that are ideal for AI automation without requiring a major investment...",
     category: "AI Automation",
-    readTime: "8 menit",
-    date: "10 Januari 2026",
+    readTime: "8 min read",
+    date: "January 10, 2026",
   },
   {
     slug: "roi-realistis-implementasi-ai",
-    title: "ROI Realistis dari Implementasi AI di UMKM",
-    description: "Berapa lama break-even dari investasi AI automation? Data real dari implementasi di berbagai bisnis...",
+    title: "Realistic ROI from AI Implementation for SMEs",
+    description: "How long does it take to break even on AI automation? Real-world implementation data from businesses...",
     category: "Business Strategy",
-    readTime: "10 menit",
-    date: "9 Januari 2026",
+    readTime: "10 min read",
+    date: "January 9, 2026",
   },
   {
     slug: "chatbot-ai-vs-chatbot-biasa",
-    title: "Chatbot AI vs Chatbot Biasa: Apa Bedanya?",
-    description: "Penjelasan teknis tapi mudah dipahami tentang perbedaan rule-based chatbot dengan AI-powered chatbot...",
+    title: "AI Chatbots vs. Traditional Chatbots: What's the Difference?",
+    description: "A clear, accessible explanation of the differences between rule-based and AI-powered chatbots...",
     category: "AI Technology",
-    readTime: "5 menit",
-    date: "8 Januari 2026",
+    readTime: "5 min read",
+    date: "January 8, 2026",
   },
 ];
 
 const categoryColors: Record<string, string> = {
   "Business Strategy": "bg-blue-500/10 text-blue-400 border-blue-500/20",
   "AI Automation": "bg-green-500/10 text-green-400 border-green-500/20",
-  "AI Technology": "bg-purple-500/10 text-purple-400 border-purple-500/20",
+  "AI Technology": "bg-blue-500/10 text-blue-400 border-blue-500/20",
 };
 
 export default function BlogPage() {
@@ -72,7 +72,7 @@ export default function BlogPage() {
         {/* Squares Background */}
         <div className="absolute inset-0">
           <Squares
-            color="#6106DF"
+            color="#2563EB"
             size={40}
             speed={0.5}
             direction="diagonal"
@@ -88,10 +88,10 @@ export default function BlogPage() {
             AI Solutions & Business Automation Insights
           </h1>
           <p className="text-lg text-white/70 max-w-2xl">
-            Artikel, panduan, dan insights tentang{" "}
+            Articles, guides, and insights on{" "}
             <span className="text-white">AI solutions</span>,{" "}
-            <span className="text-white">otomasi bisnis</span>, dan transformasi
-            digital untuk UMKM Indonesia.
+            <span className="text-white">business automation</span>, and digital
+            transformation for Indonesian SMEs.
           </p>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function BlogPage() {
                 </p>
 
                 <span className="inline-flex items-center gap-2 text-primary text-sm font-medium group-hover:gap-3 transition-all">
-                  Baca Selengkapnya
+                  Read More
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -141,7 +141,7 @@ export default function BlogPage() {
       {/* Latest Articles */}
       <section className="py-20 relative">
         <div className="max-w-[1100px] mx-auto px-6 md:px-16">
-          <h2 className="text-2xl font-bold text-white mb-8">Artikel Terbaru</h2>
+          <h2 className="text-2xl font-bold text-white mb-8">Latest Articles</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             {latestPosts.map((post) => (
@@ -184,16 +184,16 @@ export default function BlogPage() {
         <div className="max-w-[1100px] mx-auto px-6 md:px-16 relative">
           <div className="max-w-xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Dapatkan Update Artikel Terbaru
+              Get the Latest Articles
             </h2>
             <p className="text-white/60 mb-8">
-              Subscribe untuk mendapat artikel, tips, dan case study tentang AI automation langsung ke email Anda.
+              Subscribe to receive articles, tips, and AI automation case studies in your inbox.
             </p>
 
             <form className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
-                placeholder="Email Anda"
+                placeholder="Your email"
                 className="flex-1 px-5 py-3 rounded-full bg-white/[0.05] border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:border-primary/50 transition-colors"
               />
               <button

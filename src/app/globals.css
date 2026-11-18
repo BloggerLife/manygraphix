@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #6106DF;
-  --color-primary-light: #7B2FE8;
-  --color-primary-dark: #4A05A8;
-  --color-primary-glow: rgba(97, 6, 223, 0.3);
+  --color-primary: #2563EB;
+  --color-primary-light: #3B82F6;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-glow: rgba(37, 99, 235, 0.3);
   --color-dark-bg: #0A0A0A;
   --color-dark-card: #111111;
   --color-dark-border: #1A1A1A;
@@ -39,7 +39,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6106DF;
+  background: #2563EB;
 }
 
 /* Geometric animation */
@@ -77,22 +77,22 @@ body {
 
 /* Dot pattern background */
 .bg-dots {
-  background-image: radial-gradient(circle, rgba(97, 6, 223, 0.15) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(37, 99, 235, 0.15) 1px, transparent 1px);
   background-size: 30px 30px;
 }
 
 /* Grid pattern background */
 .bg-grid {
   background-image:
-    linear-gradient(rgba(97, 6, 223, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(97, 6, 223, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(37, 99, 235, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.05) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 /* Section gradient divider */
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(97, 6, 223, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.4), transparent);
 }
 
 /* Scroll reveal animations */

@@ -11,7 +11,7 @@ export default function Services() {
       badge: t("services.badge1"),
       title: t("services.service1.title"),
       price: "2.5",
-      unit: "Juta",
+      unit: "million",
       link: "/layanan/website-company-profile",
       features: [
         t("services.service1.f1"),
@@ -24,7 +24,7 @@ export default function Services() {
       badge: t("services.badge2"),
       title: t("services.service2.title"),
       price: "3",
-      unit: "Juta/bulan",
+      unit: "million/month",
       link: "/layanan/seo-content-marketing",
       features: [
         t("services.service2.f1"),
@@ -38,7 +38,7 @@ export default function Services() {
       badge: t("services.badge3"),
       title: t("services.service3.title"),
       price: "3",
-      unit: "Juta/bulan",
+      unit: "million/month",
       link: "/layanan/social-media-digital-ads",
       features: [
         t("services.service3.f1"),

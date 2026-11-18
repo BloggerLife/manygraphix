@@ -28,7 +28,7 @@ export default function WhatsAppButton() {
         blueOffset={-50}
         className="shadow-[0_4px_30px_rgba(0,0,0,0.3)]"
         style={{
-          border: "1px solid rgba(97, 6, 223, 0.15)",
+          border: "1px solid rgba(37, 99, 235, 0.15)",
         }}
       >
         <svg viewBox="0 0 24 24" fill="white" className="w-7 h-7">

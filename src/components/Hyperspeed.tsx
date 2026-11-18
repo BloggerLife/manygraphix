@@ -12,7 +12,7 @@ interface HyperspeedProps {
 
 export default function Hyperspeed({
   speed = 2,
-  starColor = "#6106DF",
+  starColor = "#2563EB",
   trailColor = "#3B0A8C",
   starCount = 200,
   className = "",

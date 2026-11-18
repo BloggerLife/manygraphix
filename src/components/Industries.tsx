@@ -107,7 +107,7 @@ export default function Industries() {
           {industries.map((ind) => (
             <BentoCard key={ind.title} className="p-5 group">
               <div className="flex items-center gap-4">
-                <div className="w-11 h-11 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 group-hover:border-primary/40 group-hover:shadow-[0_0_20px_rgba(97,6,223,0.3)] transition-all shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/20 group-hover:border-primary/40 group-hover:shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all shrink-0">
                   {ind.icon}
                 </div>
                 <h4 className="text-white/90 group-hover:text-white font-medium transition-colors">{ind.title}</h4>

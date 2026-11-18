@@ -10,7 +10,7 @@ interface GridMotionProps {
 }
 
 export default function GridMotion({
-  color = "#6106DF",
+  color = "#2563EB",
   gridSize = 50,
   speed = 0.02,
   className = "",

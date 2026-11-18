@@ -55,13 +55,13 @@ export default function Hero() {
           </p>
           <div className="text-[3rem] md:text-[5rem] lg:text-[7rem] font-bold leading-[0.95] tracking-tighter">
             <RotatingText
-              texts={["AI Chatbot.", "Otomasi.", "Analytics.", "Vision."]}
+              texts={["AI Chatbot.", "Automation.", "Analytics.", "Vision."]}
               rotationInterval={2200}
               staggerDuration={0.03}
               staggerFrom="first"
               splitBy="characters"
               mainClassName="text-white"
-              elementLevelClassName="drop-shadow-[0_0_20px_rgba(97,6,223,0.3)]"
+              elementLevelClassName="drop-shadow-[0_0_20px_rgba(37,99,235,0.3)]"
               initial={{ opacity: 0, scale: 0.85, filter: "blur(8px)" }}
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.1, filter: "blur(8px)" }}

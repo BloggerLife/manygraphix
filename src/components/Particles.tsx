@@ -19,7 +19,7 @@ interface Particle {
 }
 
 export default function Particles({
-  color = "#6106DF",
+  color = "#2563EB",
   particleCount = 80,
   speed = 0.5,
   connectDistance = 120,

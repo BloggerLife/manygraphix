@@ -16,7 +16,7 @@ export default function Contact() {
       {/* Aurora background */}
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         <Aurora
-          colorStops={["#6106DF", "#2d0a5e", "#6106DF"]}
+          colorStops={["#2563EB", "#1E3A8A", "#2563EB"]}
           amplitude={1.5}
           blend={0.5}
           speed={0.5}

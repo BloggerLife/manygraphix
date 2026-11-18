@@ -18,7 +18,7 @@ export default function PortfolioPage() {
   const features = [
     {
       title: "Smart Attendance System",
-      desc: "Holiday-aware clock-in/out dengan integrasi hari libur nasional Indonesia",
+      desc: "Holiday-aware clock-in and clock-out with Indonesian public holiday integration",
       icon: (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -27,7 +27,7 @@ export default function PortfolioPage() {
     },
     {
       title: "Learning Management",
-      desc: "Course modules dengan progress tracking untuk setiap peserta",
+      desc: "Course modules with progress tracking for every participant",
       icon: (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -36,7 +36,7 @@ export default function PortfolioPage() {
     },
     {
       title: "Assignment Workflows",
-      desc: "Distribusi dan penilaian tugas otomatis dengan notifikasi",
+      desc: "Automated assignment distribution and grading with notifications",
       icon: (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
@@ -45,7 +45,7 @@ export default function PortfolioPage() {
     },
     {
       title: "Parent Portal",
-      desc: "Token-based access untuk orang tua monitoring attendance dan progress",
+      desc: "Token-based access for parents to monitor attendance and progress",
       icon: (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
     },
     {
       title: "AI Integration",
-      desc: "Onboarding wizard dan automasi provisioning akun",
+      desc: "Onboarding wizard and automated account provisioning",
       icon: (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -63,7 +63,7 @@ export default function PortfolioPage() {
     },
     {
       title: "Google Workspace Sync",
-      desc: "Auto-provision @ashari.tech email untuk approved employees",
+      desc: "Automatically provision @ashari.tech email accounts for approved employees",
       icon: (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -86,17 +86,17 @@ export default function PortfolioPage() {
   const upcomingProjects = [
     {
       title: "E-Commerce Customer Service Bot",
-      desc: "AI chatbot berbahasa Indonesia untuk handle product inquiries, order tracking, dan basic troubleshooting",
+      desc: "Indonesian-language AI chatbot for product inquiries, order tracking, and basic troubleshooting",
       status: "In Development",
     },
     {
       title: "Inventory Prediction System",
-      desc: "Machine learning model untuk forecast demand dan optimize stock levels berdasarkan historical data",
+      desc: "Machine learning model to forecast demand and optimize stock levels based on historical data",
       status: "In Development",
     },
     {
       title: "Document Processing Automation",
-      desc: "OCR + NLP untuk extract data dari invoice/receipt, auto-categorize, dan export ke accounting system",
+      desc: "OCR + NLP to extract data from invoices and receipts, categorize it automatically, and export it to an accounting system",
       status: "In Development",
     },
   ];
@@ -110,7 +110,7 @@ export default function PortfolioPage() {
         {/* Squares Background */}
         <div className="absolute inset-0">
           <Squares
-            color="#6106DF"
+            color="#2563EB"
             size={40}
             speed={0.5}
             direction="diagonal"
@@ -126,8 +126,8 @@ export default function PortfolioPage() {
             Portfolio & Case Studies
           </h1>
           <p className="text-lg text-white/70 max-w-2xl">
-            Sistem dan solusi AI yang kami develop untuk berbagai kebutuhan bisnis. Dari{" "}
-            <span className="text-white">employee management platforms</span> hingga{" "}
+            AI systems and solutions we've built for a range of business needs, from{" "}
+            <span className="text-white">employee management platforms</span> to{" "}
             <span className="text-white">custom automation workflows</span>.
           </p>
         </div>
@@ -152,8 +152,8 @@ export default function PortfolioPage() {
               Internal Employee Management Platform
             </h2>
             <p className="text-white/60 text-lg mb-8 max-w-3xl">
-              Full-stack platform untuk mengelola PKL (praktik kerja lapangan) dengan AI integration,
-              attendance automation, learning management, dan workflow optimization.
+              A full-stack platform for managing internships, with AI integration,
+              attendance automation, learning management, and workflow optimization.
             </p>
 
             {/* Metrics */}
@@ -181,8 +181,8 @@ export default function PortfolioPage() {
                   Challenge
                 </h3>
                 <p className="text-white/60 leading-relaxed">
-                  Managing 30+ interns secara manual via spreadsheets dan WhatsApp — attendance tracking,
-                  course monitoring, assignment grading, dan koordinasi dengan orang tua.
+                  Managing 30+ interns manually through spreadsheets and WhatsApp, with attendance tracking,
+                  course monitoring, assignment grading, and parent coordination.
                 </p>
               </div>
               <div>
@@ -195,8 +195,8 @@ export default function PortfolioPage() {
                   Solution
                 </h3>
                 <p className="text-white/60 leading-relaxed">
-                  Custom platform dengan intelligent automation: holiday-aware attendance system,
-                  integrated learning paths, automated assignment workflows, dan parent portal.
+                  A custom platform with intelligent automation: a holiday-aware attendance system,
+                  integrated learning paths, automated assignment workflows, and a parent portal.
                 </p>
               </div>
             </div>
@@ -263,24 +263,24 @@ export default function PortfolioPage() {
         <div className="max-w-[1100px] mx-auto px-6 md:px-16 relative">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Butuh Custom AI Solution?
+              Need a Custom AI Solution?
             </h2>
             <p className="text-white/60 mb-8">
-              Dari employee management hingga operational automation — kami develop sistem
-              yang sesuai kebutuhan spesifik bisnis Anda.
+              From employee management to operational automation, we build systems
+              tailored to your specific business needs.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/#about"
                 className="px-6 py-3 border border-white/20 hover:border-white/40 text-white rounded-full text-sm font-medium transition-all"
               >
-                Tentang Kami
+                About Us
               </Link>
               <a
                 href="mailto:contact@ashari.tech"
                 className="px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-full text-sm font-medium transition-all hover:scale-105"
               >
-                Konsultasi Gratis →
+                Free Consultation →
               </a>
             </div>
             <p className="text-white/40 text-sm mt-6">

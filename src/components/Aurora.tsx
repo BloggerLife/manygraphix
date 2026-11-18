@@ -134,7 +134,7 @@ interface AuroraProps {
 }
 
 const Aurora: React.FC<AuroraProps> = ({
-  colorStops = ["#6106DF", "#D9D9D9", "#6106DF"],
+  colorStops = ["#2563EB", "#D9D9D9", "#2563EB"],
   amplitude = 1.0,
   blend = 0.5,
   speed = 1.0,

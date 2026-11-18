@@ -17,7 +17,7 @@ const GlassIcon: React.FC<GlassIconProps> = ({ icon, size = "2.8em" }) => {
       {/* Brand gradient shadow layer */}
       <span
         className="absolute inset-0 rounded-xl opacity-60 blur-[6px] transition-all duration-300 group-hover:opacity-80 group-hover:blur-[8px]"
-        style={{ background: "linear-gradient(135deg, #6106DF, #4A05A8)" }}
+        style={{ background: "linear-gradient(135deg, #2563EB, #1D4ED8)" }}
       />
       {/* Glass surface */}
       <span

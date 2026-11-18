@@ -13,14 +13,14 @@ export default function Footer() {
             <div>
               <a href="/" className="flex items-center gap-2 mb-4">
                 <svg className="w-7 h-5" viewBox="105 154 290 191" fill="none">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M198.965 221L257.586 221L250 249.5L242.414 278L227.242 335H285.863L301.035 278L316.208 221H374.827L390 164L331.38 164H272.759H214.137H155.517L198.965 221ZM198.965 221L191.379 249.5L183.792 278L168.62 335H110L125.172 278L140.345 221L198.965 221Z" fill="#6106DF"/>
+                  <path fillRule="evenodd" clipRule="evenodd" d="M198.965 221L257.586 221L250 249.5L242.414 278L227.242 335H285.863L301.035 278L316.208 221H374.827L390 164L331.38 164H272.759H214.137H155.517L198.965 221ZM198.965 221L191.379 249.5L183.792 278L168.62 335H110L125.172 278L140.345 221L198.965 221Z" fill="#2563EB"/>
                 </svg>
                 <span className="text-sm font-medium text-white tracking-tight">
                   Ashari<span className="text-white/40">.Tech</span>
                 </span>
               </a>
               <p className="text-xs text-white/40 leading-relaxed max-w-[280px] font-light">
-                Perusahaan teknologi AI Indonesia yang berfokus pada solusi AI untuk bisnis dan transformasi digital SME.
+                An Indonesian AI technology company focused on AI solutions for businesses and SME digital transformation.
               </p>
             </div>
 
@@ -83,7 +83,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="#" className="text-xs text-white/40 hover:text-primary/70 transition-colors font-light">
-                    Mitra Edukasi
+                    Education Partner
                   </a>
                 </li>
               </ul>

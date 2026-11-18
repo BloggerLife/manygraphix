@@ -11,7 +11,7 @@ interface SquaresProps {
 }
 
 export default function Squares({
-  color = "#6106DF",
+  color = "#2563EB",
   size = 40,
   speed = 0.5,
   direction = "diagonal",

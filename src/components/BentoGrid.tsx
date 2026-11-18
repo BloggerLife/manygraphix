@@ -4,8 +4,8 @@ import React, { useRef, useEffect, useState, ReactNode } from "react";
 import { gsap } from "gsap";
 import { motion, useMotionValue, useSpring, SpringOptions } from "motion/react";
 
-// Brand color: #6106DF = rgb(97, 6, 223)
-const DEFAULT_GLOW_COLOR = "97, 6, 223";
+// Brand color: #2563EB = rgb(37, 99, 235)
+const DEFAULT_GLOW_COLOR = "37, 99, 235";
 const DEFAULT_SPOTLIGHT_RADIUS = 250;
 const MOBILE_BREAKPOINT = 768;
 
@@ -366,7 +366,7 @@ export function BentoIcon({ children, className = "" }: BentoIconProps) {
         text-primary
         transition-all duration-300
         group-hover:bg-primary/20 group-hover:border-primary/40
-        group-hover:shadow-[0_0_20px_rgba(97,6,223,0.3)]
+        group-hover:shadow-[0_0_20px_rgba(37,99,235,0.3)]
         ${className}
       `}
     >
@@ -386,7 +386,7 @@ export function BentoTitle({ children, glow = false, className = "" }: BentoTitl
     <h3
       className={`
         text-white font-semibold text-lg
-        ${glow ? "drop-shadow-[0_0_10px_rgba(97,6,223,0.5)]" : ""}
+        ${glow ? "drop-shadow-[0_0_10px_rgba(37,99,235,0.5)]" : ""}
         ${className}
       `}
     >

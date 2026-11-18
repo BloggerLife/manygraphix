@@ -11,7 +11,7 @@ interface WavesProps {
 }
 
 export default function Waves({
-  color = "#6106DF",
+  color = "#2563EB",
   waveCount = 5,
   speed = 0.02,
   amplitude = 50,

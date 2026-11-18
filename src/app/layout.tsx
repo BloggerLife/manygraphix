@@ -3,9 +3,9 @@ import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "AshariTech - Custom AI Solutions untuk Bisnis Indonesia",
+  title: "AshariTech - Custom AI Solutions for Indonesian Businesses",
   description:
-    "AshariTech adalah perusahaan teknologi AI Indonesia yang berfokus pada solusi AI untuk bisnis dan transformasi digital SME.",
+    "AshariTech is an Indonesian AI technology company focused on AI solutions for businesses and SME digital transformation.",
   icons: {
     icon: "/favicon.svg",
   },
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

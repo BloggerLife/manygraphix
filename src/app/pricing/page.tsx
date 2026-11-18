@@ -11,30 +11,30 @@ const categories = [
     id: "website",
     label: "Website",
     title: "Website & Company Profile",
-    desc: "Website profesional dengan AI chatbot included",
+    desc: "Professional website with an AI chatbot included",
     link: "/layanan/website-company-profile",
     tiers: [
       {
         name: "Starter",
-        price: "2.5 Juta",
+        price: "2.5 million",
         duration: "One-time",
-        target: "Bisnis baru yang butuh kehadiran online",
-        features: ["1-5 halaman, mobile-responsive", "Basic SEO & contact forms", "WhatsApp integration", "1 bulan AI chatbot trial", "SSL certificate", "1 revisi included", "1 tahun hosting & domain"],
+        target: "New businesses that need an online presence",
+        features: ["1–5 mobile-responsive pages", "Basic SEO & contact forms", "WhatsApp integration", "1-month AI chatbot trial", "SSL certificate", "1 revision included", "1 year of hosting & domain"],
       },
       {
         name: "Professional",
-        price: "5 Juta",
+        price: "5 million",
         duration: "One-time",
         popular: true,
-        target: "Bisnis yang butuh website lengkap dan profesional",
-        features: ["6-10 halaman, custom branding", "Full SEO optimization", "CMS included (kelola sendiri)", "3 bulan AI chatbot access", "Analytics & tracking setup", "Blog dan portfolio galleries", "3 revisi, training included"],
+        target: "Businesses that need a complete, professional website",
+        features: ["6–10 pages with custom branding", "Full SEO optimization", "CMS included (manage it yourself)", "3 months of AI chatbot access", "Analytics & tracking setup", "Blog and portfolio galleries", "3 revisions and training included"],
       },
       {
         name: "Enterprise",
-        price: "12 Juta+",
+        price: "12 million+",
         duration: "One-time",
-        target: "Bisnis besar dengan kebutuhan custom",
-        features: ["Unlimited halaman", "Premium custom design", "1 tahun AI chatbot access", "E-commerce & payment gateway", "Multi-language support", "Custom API integrations", "Unlimited revisi, priority support", "Monthly maintenance included"],
+        target: "Large businesses with custom requirements",
+        features: ["Unlimited pages", "Premium custom design", "1 year of AI chatbot access", "E-commerce & payment gateway", "Multilingual support", "Custom API integrations", "Unlimited revisions and priority support", "Monthly maintenance included"],
       },
     ],
   },
@@ -42,30 +42,30 @@ const categories = [
     id: "seo",
     label: "SEO",
     title: "SEO & Content Marketing",
-    desc: "Tingkatkan ranking Google dengan AI-powered SEO",
+    desc: "Improve your Google rankings with AI-powered SEO",
     link: "/layanan/seo-content-marketing",
     tiers: [
       {
         name: "Starter",
-        price: "3 Juta",
-        duration: "/bulan",
-        target: "Bisnis baru yang mulai fokus SEO",
-        features: ["10 keywords target", "AI keyword research", "On-page optimization", "Technical SEO audit", "Google Search Console setup", "Monthly reports", "Basic competitor analysis", "Email support"],
+        price: "3 million",
+        duration: "/month",
+        target: "New businesses beginning to focus on SEO",
+        features: ["10 target keywords", "AI keyword research", "On-page optimization", "Technical SEO audit", "Google Search Console setup", "Monthly reports", "Basic competitor analysis", "Email support"],
       },
       {
         name: "Growth",
-        price: "6 Juta",
-        duration: "/bulan",
+        price: "6 million",
+        duration: "/month",
         popular: true,
-        target: "Bisnis yang butuh pertumbuhan organik signifikan",
-        features: ["25 keywords target", "Full optimization", "4 artikel/bulan + AI enhancement", "10 quality backlinks", "Bi-weekly reports", "Detailed competitor analysis", "WhatsApp priority support"],
+        target: "Businesses seeking significant organic growth",
+        features: ["25 target keywords", "Full optimization", "4 articles/month + AI enhancement", "10 quality backlinks", "Biweekly reports", "Detailed competitor analysis", "Priority WhatsApp support"],
       },
       {
         name: "Scale",
-        price: "12 Juta",
-        duration: "/bulan",
-        target: "Target agresif di market kompetitif",
-        features: ["Unlimited keywords", "Complete technical SEO", "10 artikel/bulan", "25 quality backlinks", "Local SEO & schema markup", "Weekly dashboard", "Dedicated specialist", "Monthly strategy calls"],
+        price: "12 million",
+        duration: "/month",
+        target: "Aggressive goals in a competitive market",
+        features: ["Unlimited keywords", "Complete technical SEO", "10 articles/month", "25 quality backlinks", "Local SEO & schema markup", "Weekly dashboard", "Dedicated specialist", "Monthly strategy calls"],
       },
     ],
   },
@@ -73,41 +73,41 @@ const categories = [
     id: "socmed",
     label: "Social Media",
     title: "Social Media & Digital Ads",
-    desc: "Kelola social media dengan AI audience optimization",
+    desc: "Manage social media with AI audience optimization",
     link: "/layanan/social-media-digital-ads",
     tiers: [
       {
         name: "Starter",
-        price: "3 Juta",
-        duration: "/bulan",
-        target: "Bisnis yang baru mulai social media",
-        features: ["2 platform (Instagram + 1)", "12 post designs/bulan", "Content calendar & copywriting", "Basic ads management", "AI creative suggestions", "Monthly reports", "Email support"],
+        price: "3 million",
+        duration: "/month",
+        target: "Businesses just getting started on social media",
+        features: ["2 platforms (Instagram + 1)", "12 post designs/month", "Content calendar & copywriting", "Basic ads management", "AI creative suggestions", "Monthly reports", "Email support"],
       },
       {
         name: "Professional",
-        price: "7 Juta",
-        duration: "/bulan",
+        price: "7 million",
+        duration: "/month",
         popular: true,
-        target: "Bisnis yang butuh growth signifikan",
-        features: ["3 platform pilihan", "20 post designs/bulan", "4 Reels/TikTok videos", "Meta Ads + Google Ads management", "AI audience optimization & A/B testing", "Bi-weekly reports", "Competitor monitoring", "WhatsApp priority support"],
+        target: "Businesses seeking significant growth",
+        features: ["3 platforms of your choice", "20 post designs/month", "4 Reels/TikTok videos", "Meta Ads + Google Ads management", "AI audience optimization & A/B testing", "Biweekly reports", "Competitor monitoring", "Priority WhatsApp support"],
       },
       {
         name: "Scale",
-        price: "15 Juta",
-        duration: "/bulan",
-        target: "Bisnis dengan target agresif",
-        features: ["All platforms", "Unlimited post designs", "10 videos/bulan", "All ads platform management", "AI campaign optimization", "Influencer outreach", "Real-time monitoring & weekly dashboard", "Dedicated account manager"],
+        price: "15 million",
+        duration: "/month",
+        target: "Businesses with ambitious goals",
+        features: ["All platforms", "Unlimited post designs", "10 videos/month", "Management across all ad platforms", "AI campaign optimization", "Influencer outreach", "Real-time monitoring & weekly dashboard", "Dedicated account manager"],
       },
     ],
   },
 ];
 
 const faqs = [
-  { q: "Apakah harga sudah termasuk pajak?", a: "Harga belum termasuk PPN 11% yang akan ditambahkan saat invoice." },
-  { q: "Berapa lama kontrak minimum?", a: "Layanan bulanan memerlukan minimum 3 bulan komitmen. Website bersifat one-time project." },
-  { q: "Bagaimana metode pembayaran?", a: "Transfer bank. Website: 50% di awal, 50% saat selesai. Layanan bulanan: pembayaran di muka setiap bulan." },
-  { q: "Bisa custom package?", a: "Ya, hubungi kami untuk paket custom sesuai kebutuhan dan budget spesifik bisnis Anda." },
-  { q: "Ada garansi?", a: "Website: 1 bulan bug fix warranty. Layanan recurring: execution guarantee sesuai deliverables yang disepakati." },
+  { q: "Do prices include tax?", a: "Prices exclude 11% VAT, which will be added to your invoice." },
+  { q: "What is the minimum contract term?", a: "Monthly services require a minimum three-month commitment. Website projects are one-time engagements." },
+  { q: "What payment methods do you accept?", a: "Bank transfer. Websites: 50% upfront and 50% on completion. Monthly services: payment is due in advance each month." },
+  { q: "Can I get a custom package?", a: "Yes. Contact us for a custom package tailored to your business needs and budget." },
+  { q: "Do you offer a guarantee?", a: "Websites include a one-month bug-fix warranty. Recurring services include an execution guarantee based on agreed deliverables." },
 ];
 
 export default function PricingPage() {
@@ -127,7 +127,7 @@ export default function PricingPage() {
           {/* Squares Background */}
           <div className="absolute inset-0">
             <Squares
-              color="#6106DF"
+              color="#2563EB"
               size={60}
               speed={0.5}
               direction="diagonal"
@@ -140,16 +140,16 @@ export default function PricingPage() {
               Pricing
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Investasi yang Terukur
+              A Measurable Investment
             </h1>
             <h2
               className="text-xl md:text-2xl lg:text-3xl font-medium text-white mb-6"
-              style={{ textShadow: "0 0 20px rgba(97, 6, 223, 0.8), 0 0 40px rgba(97, 6, 223, 0.4)" }}
+              style={{ textShadow: "0 0 20px rgba(37, 99, 235, 0.8), 0 0 40px rgba(37, 99, 235, 0.4)" }}
             >
-              Harga Transparan, Tanpa Biaya Tersembunyi
+              Transparent Pricing, No Hidden Fees
             </h2>
             <p className="text-base md:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-              Semua layanan termasuk AI enhancement. Pilih paket yang sesuai dengan kebutuhan bisnis Anda.
+              Every service includes AI enhancements. Choose the package that fits your business needs.
             </p>
           </div>
         </section>
@@ -168,7 +168,7 @@ export default function PricingPage() {
                     onClick={() => { setActiveCategory(cat.id); setActiveTier(1); }}
                     className={`px-6 py-2.5 rounded-lg text-sm font-medium transition-all ${
                       activeCategory === cat.id
-                        ? "bg-primary text-white shadow-[0_4px_15px_rgba(97,6,223,0.3)]"
+                        ? "bg-primary text-white shadow-[0_4px_15px_rgba(37,99,235,0.3)]"
                         : "text-white/60 hover:text-white"
                     }`}
                   >
@@ -194,7 +194,7 @@ export default function PricingPage() {
                     onClick={() => setActiveTier(i)}
                     className={`w-full text-left p-5 rounded-xl transition-all border ${
                       activeTier === i
-                        ? "bg-gradient-to-r from-primary/15 to-transparent border-primary shadow-[0_0_20px_rgba(97,6,223,0.15)]"
+                        ? "bg-gradient-to-r from-primary/15 to-transparent border-primary shadow-[0_0_20px_rgba(37,99,235,0.15)]"
                         : "border-white/10 bg-white/[0.02] hover:border-primary/30"
                     }`}
                   >
@@ -241,7 +241,7 @@ export default function PricingPage() {
                   </div>
 
                   <div className="border-t border-white/10 pt-6 mb-8">
-                    <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Yang Anda Dapatkan</h4>
+                    <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">What You Get</h4>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {currentTier.features.map((f) => (
                         <li key={f} className="flex items-start gap-3 text-sm text-white/70">
@@ -260,13 +260,13 @@ export default function PricingPage() {
                       target="_blank"
                       className="flex-1 text-center px-6 py-3.5 bg-primary text-white rounded-full font-medium text-sm hover:bg-primary/90 transition-all"
                     >
-                      Pilih {currentTier.name}
+                      Choose {currentTier.name}
                     </a>
                     <a
                       href={currentCategory.link}
                       className="flex-1 text-center px-6 py-3.5 border border-white/20 text-white rounded-full font-medium text-sm hover:border-primary/50 hover:bg-primary/[0.04] transition-all"
                     >
-                      Lihat Detail Layanan
+                      View Service Details
                     </a>
                   </div>
                 </div>
@@ -281,9 +281,9 @@ export default function PricingPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               {[
                 { icon: "✓", label: "AI Enhancement Included" },
-                { icon: "✓", label: "Tanpa Biaya Tersembunyi" },
-                { icon: "✓", label: "Konsultasi Gratis" },
-                { icon: "✓", label: "Support Berkelanjutan" },
+                { icon: "✓", label: "No Hidden Fees" },
+                { icon: "✓", label: "Free Consultation" },
+                { icon: "✓", label: "Ongoing Support" },
               ].map((b) => (
                 <div key={b.label} className="flex items-center justify-center gap-2 py-3">
                   <span className="w-5 h-5 bg-primary/20 text-primary text-xs rounded-full flex items-center justify-center font-bold">{b.icon}</span>
@@ -305,7 +305,7 @@ export default function PricingPage() {
                 FAQ
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.15]">
-                Pertanyaan Umum
+                Frequently Asked Questions
               </h2>
             </div>
             <div className="space-y-2">
@@ -345,10 +345,10 @@ export default function PricingPage() {
               Get Started
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight leading-[1.15]">
-              Butuh Penawaran Khusus?
+              Need a Custom Quote?
             </h2>
             <p className="text-base text-white/70 mb-8 leading-relaxed">
-              Budget terbatas? Kami bisa bantu carikan solusi terbaik sesuai kemampuan Anda.
+              Working with a limited budget? We'll help find the right solution for you.
             </p>
             <a
               href="https://wa.me/6285280452688"

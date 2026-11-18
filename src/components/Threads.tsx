@@ -12,7 +12,7 @@ interface ThreadsProps {
 }
 
 export default function Threads({
-  color = "#6106DF",
+  color = "#2563EB",
   amplitude = 50,
   frequency = 0.02,
   speed = 0.02,

@@ -10,8 +10,8 @@ import GlassSurface from "@/components/GlassSurface";
 export default function AISolutionsPage() {
   const services = [
     {
-      title: "Chatbot AI Indonesia",
-      desc: "Chatbot cerdas berbahasa Indonesia untuk customer service, automasi sales, dan internal support menggunakan teknologi GPT dan NLP.",
+      title: "AI Chatbots for Indonesia",
+      desc: "Intelligent Indonesian-language chatbots for customer service, sales automation, and internal support powered by GPT and NLP.",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -20,7 +20,7 @@ export default function AISolutionsPage() {
     },
     {
       title: "Computer Vision",
-      desc: "Deteksi objek, facial recognition, OCR, dan quality control otomatis menggunakan deep learning untuk berbagai industri.",
+      desc: "Object detection, facial recognition, OCR, and automated quality control powered by deep learning across industries.",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -30,7 +30,7 @@ export default function AISolutionsPage() {
     },
     {
       title: "Predictive Analytics",
-      desc: "Machine learning untuk forecasting, demand prediction, analisis perilaku pelanggan, dan keputusan berbasis data.",
+      desc: "Machine learning for forecasting, demand prediction, customer behavior analysis, and data-driven decisions.",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -39,7 +39,7 @@ export default function AISolutionsPage() {
     },
     {
       title: "Natural Language Processing",
-      desc: "Sentiment analysis, text classification, dan document processing untuk pemahaman bahasa Indonesia yang akurat.",
+      desc: "Sentiment analysis, text classification, and document processing for accurate Indonesian language understanding.",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -50,28 +50,28 @@ export default function AISolutionsPage() {
 
   const whyUs = [
     {
-      title: "Tim Ahli AI",
-      desc: "Engineer berpengalaman membangun AI solutions di berbagai industri Indonesia",
+      title: "AI Experts",
+      desc: "Experienced engineers building AI solutions across Indonesian industries",
     },
     {
       title: "Custom & Scalable",
-      desc: "Solusi dirancang khusus untuk bisnis Anda, dari MVP hingga enterprise deployment",
+      desc: "Solutions tailored to your business, from MVP to enterprise deployment",
     },
     {
-      title: "Teknologi Terkini",
-      desc: "Menggunakan OpenAI GPT, TensorFlow, PyTorch, dan teknologi AI terbaru",
+      title: "Cutting-Edge Technology",
+      desc: "Using OpenAI GPT, TensorFlow, PyTorch, and the latest AI technologies",
     },
     {
-      title: "Support Penuh",
-      desc: "Layanan end-to-end dari konsultasi hingga maintenance berkelanjutan",
+      title: "Full Support",
+      desc: "End-to-end service from consultation through ongoing maintenance",
     },
   ];
 
   const process = [
-    { step: "01", title: "Discovery", desc: "Analisis kebutuhan dan use case bisnis Anda" },
-    { step: "02", title: "Data Prep", desc: "Pengumpulan dan persiapan data training" },
-    { step: "03", title: "Development", desc: "Pengembangan dan training model AI" },
-    { step: "04", title: "Deploy", desc: "Deployment ke production dan monitoring" },
+    { step: "01", title: "Discovery", desc: "Analyze your business needs and use cases" },
+    { step: "02", title: "Data Preparation", desc: "Collect and prepare training data" },
+    { step: "03", title: "Development", desc: "Develop and train the AI model" },
+    { step: "04", title: "Deployment", desc: "Deploy to production and monitor performance" },
   ];
 
   return (
@@ -83,7 +83,7 @@ export default function AISolutionsPage() {
         {/* FaultyTerminal Background */}
         <div className="absolute inset-0">
           <FaultyTerminal
-            tint="#6106DF"
+            tint="#2563EB"
             scale={2.5}
             gridMul={[2, 1]}
             digitSize={1.5}
@@ -127,7 +127,7 @@ export default function AISolutionsPage() {
                 />
               </div>
               <span className="relative z-10 px-4 py-1.5 text-white text-xs tracking-wider font-medium">
-                AI SOLUTIONS INDONESIA
+                  AI SOLUTIONS FOR INDONESIA
               </span>
             </span>
           </div>
@@ -140,15 +140,15 @@ export default function AISolutionsPage() {
           {/* Subtitle */}
           <h2
             className="text-xl md:text-2xl lg:text-3xl font-medium text-white mb-6"
-            style={{ textShadow: "0 0 20px rgba(97, 6, 223, 0.8), 0 0 40px rgba(97, 6, 223, 0.4)" }}
+            style={{ textShadow: "0 0 20px rgba(37, 99, 235, 0.8), 0 0 40px rgba(37, 99, 235, 0.4)" }}
           >
-            untuk Bisnis Modern
+            for Modern Businesses
           </h2>
 
           {/* Description */}
           <p className="text-base md:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-            Custom artificial intelligence untuk automasi bisnis, chatbot cerdas,
-            dan machine learning dari perusahaan AI Indonesia terpercaya.
+            Custom artificial intelligence for business automation, intelligent chatbots,
+            and machine learning from a trusted Indonesian AI company.
           </p>
         </div>
       </section>
@@ -158,13 +158,13 @@ export default function AISolutionsPage() {
         <div className="max-w-[1100px] mx-auto px-6 md:px-16">
           <div className="text-center mb-16">
             <span className="text-xs tracking-[0.3em] text-primary/80 uppercase mb-4 block">
-              Layanan AI
+              AI Services
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Solusi AI yang Kami Tawarkan
+              AI Solutions We Offer
             </h2>
             <p className="text-white/60 max-w-xl mx-auto">
-              Berbagai layanan AI untuk memenuhi kebutuhan transformasi digital bisnis Anda
+              A range of AI services to support your business's digital transformation
             </p>
           </div>
 
@@ -189,10 +189,10 @@ export default function AISolutionsPage() {
         <div className="max-w-[1100px] mx-auto px-6 md:px-16 relative">
           <div className="text-center mb-16">
             <span className="text-xs tracking-[0.3em] text-primary/80 uppercase mb-4 block">
-              Keunggulan
+              Why Choose Us
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Mengapa Pilih Ashari Tech?
+              Why Choose Ashari Tech?
             </h2>
           </div>
 
@@ -213,10 +213,10 @@ export default function AISolutionsPage() {
         <div className="max-w-[1100px] mx-auto px-6 md:px-16">
           <div className="text-center mb-16">
             <span className="text-xs tracking-[0.3em] text-primary/80 uppercase mb-4 block">
-              Proses
+              Process
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Bagaimana Kami Bekerja
+              How We Work
             </h2>
           </div>
 
@@ -247,17 +247,17 @@ export default function AISolutionsPage() {
         <div className="max-w-[1100px] mx-auto px-6 md:px-16 relative">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Siap Implementasi AI untuk Bisnis Anda?
+              Ready to Implement AI in Your Business?
             </h2>
             <p className="text-white/60 mb-8">
-              Konsultasi dengan tim ahli Ashari Tech. Gratis, tanpa komitmen.
+              Talk with the Ashari Tech experts. Free, with no commitment.
             </p>
             <a
               href="https://wa.me/6285280452688"
               target="_blank"
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-full text-sm font-medium transition-all hover:scale-105"
             >
-              Konsultasi Gratis
+              Free Consultation
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

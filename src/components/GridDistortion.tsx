@@ -43,20 +43,20 @@ function generateBrandImage(): string {
 
   // Brand gradient background
   const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-  grad.addColorStop(0, "#0a0014");
-  grad.addColorStop(0.2, "#1a0338");
-  grad.addColorStop(0.45, "#6106DF");
-  grad.addColorStop(0.7, "#2d0a5e");
+  grad.addColorStop(0, "#020617");
+  grad.addColorStop(0.2, "#0F172A");
+  grad.addColorStop(0.45, "#2563EB");
+  grad.addColorStop(0.7, "#1E3A8A");
   grad.addColorStop(1, "#000000");
   ctx.fillStyle = grad;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // Radial purple highlights
+  // Radial blue highlights
   const radial1 = ctx.createRadialGradient(
     canvas.width * 0.3, canvas.height * 0.4, 0,
     canvas.width * 0.3, canvas.height * 0.4, 450
   );
-  radial1.addColorStop(0, "rgba(97, 6, 223, 0.6)");
+  radial1.addColorStop(0, "rgba(37, 99, 235, 0.6)");
   radial1.addColorStop(1, "rgba(0, 0, 0, 0)");
   ctx.fillStyle = radial1;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -65,7 +65,7 @@ function generateBrandImage(): string {
     canvas.width * 0.75, canvas.height * 0.55, 0,
     canvas.width * 0.75, canvas.height * 0.55, 400
   );
-  radial2.addColorStop(0, "rgba(74, 5, 168, 0.5)");
+  radial2.addColorStop(0, "rgba(29, 78, 216, 0.5)");
   radial2.addColorStop(1, "rgba(0, 0, 0, 0)");
   ctx.fillStyle = radial2;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -75,7 +75,7 @@ function generateBrandImage(): string {
     canvas.width * 0.5, canvas.height * 0.3, 0,
     canvas.width * 0.5, canvas.height * 0.3, 350
   );
-  radial3.addColorStop(0, "rgba(97, 6, 223, 0.3)");
+  radial3.addColorStop(0, "rgba(37, 99, 235, 0.3)");
   radial3.addColorStop(1, "rgba(0, 0, 0, 0)");
   ctx.fillStyle = radial3;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
