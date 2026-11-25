@@ -13,7 +13,7 @@ Responsive company website built with Next.js App Router, TypeScript, Tailwind C
 
 1. Create an account at https://www.emailjs.com/ and connect the mailbox that should receive enquiries.
 2. Create an email service and a template.
-3. In the template, use these variables: `{{from_name}}`, `{{reply_to}}`, `{{subject}}`, `{{service}}`, `{{message}}`.
+3. Set the template's **To Email** to `{{to_email}}` so enquiries go to the configured company email. Use these template variables: `{{to_email}}`, `{{from_name}}`, `{{reply_to}}`, `{{subject}}`, `{{service}}`, `{{message}}`.
 4. Add the Service ID, Template ID and Public Key to `.env.local` using the names in `.env.example`.
 
 ## Branding and contact details
@@ -24,7 +24,7 @@ Responsive company website built with Next.js App Router, TypeScript, Tailwind C
 
 ## Notes
 
-- The header becomes visible with a frosted-glass effect after scrolling beyond the hero threshold.
+- The header stays frosted glass while it overlaps the hero section, then switches to a light background.
 - The floating Facebook and WhatsApp links are fixed at the bottom-right.
 - The contact form sends through EmailJS in the browser; no backend mail server is required.
 - IT photography uses remote Unsplash image URLs. Replace with licensed company imagery if preferred.

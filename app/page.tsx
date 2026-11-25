@@ -1,13 +1,399 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowRight, ArrowUpRight, Check, CheckCircle2, Cpu, Network, ShieldCheck, Wrench, Zap } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowRight,
+  ArrowUpRight,
+  Check,
+  CheckCircle2,
+  Cpu,
+  Network,
+  ShieldCheck,
+  Wrench,
+  Zap,
+} from "lucide-react";
 import ContactForm from "@/components/ContactForm";
-const services=[{id:"networking",n:"01",icon:Network,title:"Computer Networking",desc:"Build a reliable, secure and connected environment for your team. From setup to ongoing network care, we help your devices and people work seamlessly.",items:["Network installation & configuration","Wired and wireless network setup","Network troubleshooting & maintenance","Router, switch and connectivity support"],image:"network-image"},{id:"systems",n:"02",icon:Cpu,title:"Computer Systems",desc:"Get more from your technology with dependable computer systems solutions, from initial setup to upgrades and routine maintenance.",items:["Computer setup & software installation","Hardware diagnosis and upgrades","Operating system installation","System optimisation & maintenance"],image:"systems-image"},{id:"support",n:"03",icon:Wrench,title:"IT Support",desc:"When technology slows you down, get practical help. We work to resolve everyday technical issues and keep your business moving.",items:["Technical support & troubleshooting","Computer repair and diagnostics","IT maintenance & user assistance","Technical advice and consultation"],image:"support-image"}];
-const reveal={hidden:{opacity:0,y:24},show:{opacity:1,y:0,transition:{duration:.6}}};
-export default function Home(){return <main><section id="home" className="hero-grid relative flex min-h-[760px] items-center pt-24 text-white"><div className="container relative z-10 grid items-center gap-12 py-24 lg:grid-cols-[1.15fr_.85fr]"><motion.div initial="hidden" animate="show" variants={reveal}><span className="eyebrow !text-blue-300">Technology. Connectivity. Confidence.</span><h1 className="mt-7 max-w-3xl text-[clamp(3rem,7vw,5.7rem)] font-extrabold leading-[.99] tracking-[-.055em]">IT that works as hard as <span className="text-blue-300">you do.</span></h1><p className="mt-7 max-w-xl text-lg leading-8 text-slate-200">From computer networks and systems to dependable IT support, ManyGraphix helps businesses stay connected, productive and ready for what's next.</p><div className="mt-9 flex flex-wrap gap-4"><Link href="#services" className="btn-primary !bg-blue-500 hover:!bg-blue-400">Explore our services <ArrowUpRight size={18}/></Link><Link href="#contact" className="inline-flex items-center gap-2 rounded-lg border border-white/40 px-5 py-3.5 font-bold text-white transition hover:bg-white/10">Talk to our team <ArrowRight size={17}/></Link></div><div className="mt-14 flex flex-wrap gap-x-8 gap-y-4 text-sm text-slate-200"><span className="flex items-center gap-2"><CheckCircle2 size={17} className="text-blue-300"/> Practical solutions</span><span className="flex items-center gap-2"><CheckCircle2 size={17} className="text-blue-300"/> Reliable support</span><span className="flex items-center gap-2"><CheckCircle2 size={17} className="text-blue-300"/> Business-focused</span></div></motion.div><motion.div initial={{opacity:0,scale:.94}} animate={{opacity:1,scale:1}} transition={{duration:.8,delay:.2}} className="hidden lg:block"><div className="relative ml-auto max-w-[430px] rounded-2xl border border-white/20 bg-white/10 p-7 shadow-2xl backdrop-blur-md"><div className="flex items-center justify-between border-b border-white/15 pb-5"><div><p className="text-xs font-bold uppercase tracking-[.2em] text-blue-200">ManyGraphix</p><p className="mt-1 text-lg font-bold">Technology overview</p></div><span className="h-3 w-3 rounded-full bg-emerald-400 shadow-[0_0_16px_#34d399]"/></div><div className="my-7 grid grid-cols-2 gap-3"><div className="rounded-xl bg-[#082f78]/80 p-5"><Network className="mb-5 text-blue-300"/><p className="font-bold">Networking</p><p className="mt-1 text-xs text-slate-300">Connected infrastructure</p></div><div className="rounded-xl bg-[#082f78]/80 p-5"><Cpu className="mb-5 text-blue-300"/><p className="font-bold">Systems</p><p className="mt-1 text-xs text-slate-300">Reliable performance</p></div><div className="col-span-2 rounded-xl bg-[#082f78]/80 p-5"><div className="flex items-center gap-4"><ShieldCheck className="text-blue-300" size={30}/><div><p className="font-bold">IT support you can count on</p><p className="mt-1 text-xs text-slate-300">Helping keep your technology running smoothly</p></div></div></div></div><div className="flex items-center justify-between text-xs text-slate-300"><span>CONNECTED & PROTECTED</span><span className="flex items-center gap-1"><Zap size={13} className="text-blue-300"/> Ready for business</span></div></div></motion.div></div><a href="#intro" aria-label="Scroll to introduction" className="absolute bottom-7 left-1/2 -translate-x-1/2 text-white/70"><ArrowDown className="animate-bounce"/></a></section>
-<section id="intro" className="section-pad"><div className="container grid items-center gap-14 lg:grid-cols-2"><motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={reveal}><span className="eyebrow">Your technology partner</span><h2 className="section-title">Technology should make business <span className="text-[var(--brand)]">easier.</span></h2><p className="section-copy">At ManyGraphix, we focus on the technology that keeps your organisation moving. We bring together computer networking, computer systems and IT support to help you solve problems, improve reliability and get more value from your technology.</p><p className="section-copy mt-4">Whether you're setting up a new workspace, improving an existing network or need a hand with a technical issue, we're here to help.</p><Link href="/about" className="mt-8 inline-flex items-center gap-2 font-bold text-[var(--brand)]">Discover ManyGraphix <ArrowRight size={17}/></Link></motion.div><div className="about-image relative min-h-[390px] overflow-hidden rounded-2xl"><div className="absolute bottom-5 left-5 right-5 rounded-xl border border-white/30 bg-white/90 p-5 backdrop-blur"><p className="text-sm font-bold text-[var(--ink)]">A smarter, more dependable IT environment</p><p className="mt-1 text-xs text-slate-500">The right support for the technology you rely on.</p></div></div></div></section>
-<section id="services" className="section-pad bg-[var(--surface)]"><div className="container"><div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><span className="eyebrow">What we do</span><h2 className="section-title">IT services built around <span className="text-[var(--brand)]">your needs.</span></h2><p className="section-copy">Three core areas. One goal: making your technology work better for you.</p></div><Link href="#contact" className="btn-outline w-fit">Discuss a requirement <ArrowUpRight size={17}/></Link></div><div className="grid gap-6 lg:grid-cols-3">{services.map((s,i)=><motion.article key={s.id} id={s.id} initial="hidden" whileInView="show" viewport={{once:true,amount:.15}} variants={{hidden:{opacity:0,y:28},show:{opacity:1,y:0,transition:{delay:i*.12,duration:.55}}}} className="overflow-hidden rounded-2xl border border-slate-200 bg-white"><div className={`image-panel ${s.image} relative`}><span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-xs font-extrabold text-[var(--brand)]">SERVICE {s.n}</span></div><div className="p-7"><div className="icon-tile"><s.icon size={25}/></div><h3 className="mt-5 text-xl font-extrabold">{s.title}</h3><p className="mt-3 text-sm leading-7 text-slate-500">{s.desc}</p><ul className="mt-5 space-y-3">{s.items.map(item=><li key={item} className="flex gap-2 text-sm text-slate-600"><Check size={16} className="mt-0.5 shrink-0 text-[var(--accent)]"/>{item}</li>)}</ul><Link href="#contact" className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[var(--brand)]">Enquire about this service <ArrowRight size={16}/></Link></div></motion.article>)}</div></div></section>
-<section className="section-pad"><div className="container"><div className="rounded-3xl bg-[#082f78] px-7 py-14 text-white md:px-14"><div className="grid items-center gap-10 md:grid-cols-[1fr_auto]"><div><span className="eyebrow !text-blue-300">The ManyGraphix approach</span><h2 className="mt-5 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-4xl">Straightforward IT support. Thoughtful solutions. Better business days.</h2><p className="mt-4 max-w-xl leading-7 text-slate-300">We take time to understand what you need, explain the options clearly and focus on solutions that make a practical difference.</p></div><Link href="#contact" className="btn-primary w-fit !bg-blue-500 hover:!bg-blue-400">Let's work together <ArrowUpRight size={18}/></Link></div></div></div></section>
-<section id="contact" className="section-pad bg-[var(--surface)]"><div className="container grid gap-14 lg:grid-cols-[.8fr_1.2fr]"><div><span className="eyebrow">Get in touch</span><h2 className="section-title">Let's talk about your <span className="text-[var(--brand)]">IT needs.</span></h2><p className="section-copy">Have a project in mind or need technical assistance? Send us a message and tell us how we can help.</p><div className="mt-9 space-y-5"><div className="flex gap-4"><div className="icon-tile"><MailIcon/></div><div><p className="font-bold">Email us</p><p className="mt-1 text-sm text-slate-500">{process.env.NEXT_PUBLIC_COMPANY_EMAIL||"hello@manygraphix.co.zw"}</p></div></div><div className="flex gap-4"><div className="icon-tile"><PhoneIcon/></div><div><p className="font-bold">Call or WhatsApp</p><p className="mt-1 text-sm text-slate-500">{process.env.NEXT_PUBLIC_COMPANY_PHONE||"+263 77 123 4567"}</p></div></div></div></div><div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_15px_45px_rgba(16,36,58,.05)] md:p-9"><h3 className="mb-2 text-xl font-extrabold">Send us a message</h3><p className="mb-6 text-sm text-slate-500">We'll get back to you as soon as we can.</p><ContactForm/></div></div></section></main>}
-function MailIcon(){return <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>}function PhoneIcon(){return <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.4 2.8a2 2 0 0 1-.6 1.7L7.6 9.5a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 1.7-.6l2.8.4a2 2 0 0 1 1.6 1.9Z"/></svg>}
+const services = [
+  {
+    id: "networking",
+    n: "01",
+    icon: Network,
+    title: "Computer Networking",
+    desc: "Build a reliable, secure and connected environment for your team. From setup to ongoing network care, we help your devices and people work seamlessly.",
+    items: [
+      "Network installation & configuration",
+      "Wired and wireless network setup",
+      "Network troubleshooting & maintenance",
+      "Router, switch and connectivity support",
+    ],
+    image: "network-image",
+  },
+  {
+    id: "systems",
+    n: "02",
+    icon: Cpu,
+    title: "Computer Systems",
+    desc: "Get more from your technology with dependable computer systems, websites, chatbots and more, from initial setup to upgrades and routine maintenance.",
+    items: [
+      "Websites & chatbots development",
+      "Computer setup & software installation",
+      "Hardware diagnosis and upgrades",
+      "System optimisation & maintenance",
+    ],
+    image: "systems-image",
+  },
+  {
+    id: "support",
+    n: "03",
+    icon: Wrench,
+    title: "IT Support",
+    desc: "When technology slows you down, get practical help. We work to resolve everyday technical issues and keep your business moving.",
+    items: [
+      "Technical support & troubleshooting",
+      "Computer repair and diagnostics",
+      "IT maintenance & user assistance",
+      "Technical advice and consultation",
+    ],
+    image: "support-image",
+  },
+];
+const reveal = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+export default function Home() {
+  return (
+    <main>
+      <section
+        id="home"
+        className="hero-grid relative flex min-h-[760px] items-center pt-24 text-white"
+      >
+        <div className="container relative z-10 grid items-center gap-12 py-24 lg:grid-cols-[1.15fr_.85fr]">
+          <motion.div initial="hidden" animate="show" variants={reveal}>
+            <span className="eyebrow !text-blue-300">
+              Technology. Connectivity. Confidence.
+            </span>
+            <h1 className="mt-7 max-w-3xl text-[clamp(3rem,7vw,5.7rem)] font-extrabold leading-[.99] tracking-[-.055em]">
+              IT that works as hard as{" "}
+              <span className="text-blue-300">you do.</span>
+            </h1>
+            <p className="mt-7 max-w-xl text-lg leading-8 text-slate-200">
+              From computer networks and systems to dependable IT support,
+              ManyGraphix helps businesses stay connected, productive and ready
+              for what's next.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-4">
+              <Link
+                href="#services"
+                className="btn-primary !bg-blue-500 hover:!bg-blue-400"
+              >
+                Explore our services <ArrowUpRight size={18} />
+              </Link>
+              <Link
+                href="#contact"
+                className="inline-flex items-center gap-2 rounded-lg border border-white/40 px-5 py-3.5 font-bold text-white transition hover:bg-white/10"
+              >
+                Talk to our team <ArrowRight size={17} />
+              </Link>
+            </div>
+            <div className="mt-14 flex flex-wrap gap-x-8 gap-y-4 text-sm text-slate-200">
+              <span className="flex items-center gap-2">
+                <CheckCircle2 size={17} className="text-blue-300" /> Practical
+                solutions
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 size={17} className="text-blue-300" /> Reliable
+                support
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 size={17} className="text-blue-300" />{" "}
+                Business-focused
+              </span>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.94 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="hidden lg:block"
+          >
+            <div className="relative ml-auto max-w-[430px] rounded-2xl border border-white/20 bg-white/10 p-7 shadow-2xl backdrop-blur-md">
+              <div className="flex items-center justify-between border-b border-white/15 pb-5">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[.2em] text-blue-200">
+                    ManyGraphix
+                  </p>
+                  <p className="mt-1 text-lg font-bold">Technology overview</p>
+                </div>
+                <span className="h-3 w-3 rounded-full bg-emerald-400 shadow-[0_0_16px_#34d399]" />
+              </div>
+              <div className="my-7 grid grid-cols-2 gap-3">
+                <div className="rounded-xl bg-[#082f78]/80 p-5">
+                  <Network className="mb-5 text-blue-300" />
+                  <p className="font-bold">Networking</p>
+                  <p className="mt-1 text-xs text-slate-300">
+                    Connected infrastructure
+                  </p>
+                </div>
+                <div className="rounded-xl bg-[#082f78]/80 p-5">
+                  <Cpu className="mb-5 text-blue-300" />
+                  <p className="font-bold">Systems</p>
+                  <p className="mt-1 text-xs text-slate-300">
+                    Reliable performance
+                  </p>
+                </div>
+                <div className="col-span-2 rounded-xl bg-[#082f78]/80 p-5">
+                  <div className="flex items-center gap-4">
+                    <ShieldCheck className="text-blue-300" size={30} />
+                    <div>
+                      <p className="font-bold">IT support you can count on</p>
+                      <p className="mt-1 text-xs text-slate-300">
+                        Helping keep your technology running smoothly
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-between text-xs text-slate-300">
+                <span>CONNECTED & PROTECTED</span>
+                <span className="flex items-center gap-1">
+                  <Zap size={13} className="text-blue-300" /> Ready for business
+                </span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+        <a
+          href="#intro"
+          aria-label="Scroll to introduction"
+          className="absolute bottom-7 left-1/2 -translate-x-1/2 text-white/70"
+        >
+          <ArrowDown className="animate-bounce" />
+        </a>
+      </section>
+      <section id="intro" className="section-pad">
+        <div className="container grid items-center gap-14 lg:grid-cols-2">
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            variants={reveal}
+          >
+            <span className="eyebrow">Your technology partner</span>
+            <h2 className="section-title">
+              Technology should make business{" "}
+              <span className="text-[var(--brand)]">easier.</span>
+            </h2>
+            <p className="section-copy">
+              At ManyGraphix, we focus on the technology that keeps your
+              organisation moving. We bring together computer networking,
+              computer systems and IT support to help you solve problems,
+              improve reliability and get more value from your technology.
+            </p>
+            <p className="section-copy mt-4">
+              Whether you're setting up a new workspace, improving an existing
+              network or need a hand with a technical issue, we're here to help.
+            </p>
+            <Link
+              href="/about"
+              className="mt-8 inline-flex items-center gap-2 font-bold text-[var(--brand)]"
+            >
+              Discover ManyGraphix <ArrowRight size={17} />
+            </Link>
+          </motion.div>
+          <div className="about-image relative min-h-[390px] overflow-hidden rounded-2xl">
+            <div className="absolute bottom-5 left-5 right-5 rounded-xl border border-white/30 bg-white/90 p-5 backdrop-blur">
+              <p className="text-sm font-bold text-[var(--ink)]">
+                A smarter, more dependable IT environment
+              </p>
+              <p className="mt-1 text-xs text-slate-500">
+                The right support for the technology you rely on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" className="section-pad bg-[var(--surface)]">
+        <div className="container">
+          <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+            <div>
+              <span className="eyebrow">What we do</span>
+              <h2 className="section-title">
+                IT services built around{" "}
+                <span className="text-[var(--brand)]">your needs.</span>
+              </h2>
+              <p className="section-copy">
+                Three core areas. One goal: making your technology work better
+                for you.
+              </p>
+            </div>
+            <Link href="#contact" className="btn-outline w-fit">
+              Discuss a requirement <ArrowUpRight size={17} />
+            </Link>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {services.map((s, i) => (
+              <motion.article
+                key={s.id}
+                id={s.id}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.15 }}
+                variants={{
+                  hidden: { opacity: 0, y: 28 },
+                  show: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { delay: i * 0.12, duration: 0.55 },
+                  },
+                }}
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white"
+              >
+                <div className={`image-panel ${s.image} relative`}>
+                  <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-xs font-extrabold text-[var(--brand)]">
+                    SERVICE {s.n}
+                  </span>
+                </div>
+                <div className="p-7">
+                  <div className="icon-tile">
+                    <s.icon size={25} />
+                  </div>
+                  <h3 className="mt-5 text-xl font-extrabold">{s.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-500">
+                    {s.desc}
+                  </p>
+                  <ul className="mt-5 space-y-3">
+                    {s.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex gap-2 text-sm text-slate-600"
+                      >
+                        <Check
+                          size={16}
+                          className="mt-0.5 shrink-0 text-[var(--accent)]"
+                        />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="#contact"
+                    className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[var(--brand)]"
+                  >
+                    Enquire about this service <ArrowRight size={16} />
+                  </Link>
+                </div>
+              </motion.article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section-pad">
+        <div className="container">
+          <div className="rounded-3xl bg-[#082f78] px-7 py-14 text-white md:px-14">
+            <div className="grid items-center gap-10 md:grid-cols-[1fr_auto]">
+              <div>
+                <span className="eyebrow !text-blue-300">
+                  The ManyGraphix approach
+                </span>
+                <h2 className="mt-5 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-4xl">
+                  Straightforward IT support. Thoughtful solutions. Better
+                  business days.
+                </h2>
+                <p className="mt-4 max-w-xl leading-7 text-slate-300">
+                  We take time to understand what you need, explain the options
+                  clearly and focus on solutions that make a practical
+                  difference.
+                </p>
+              </div>
+              <Link
+                href="#contact"
+                className="btn-primary w-fit !bg-blue-500 hover:!bg-blue-400"
+              >
+                Let's work together <ArrowUpRight size={18} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" className="section-pad bg-[var(--surface)]">
+        <div className="container grid gap-14 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <span className="eyebrow">Get in touch</span>
+            <h2 className="section-title">
+              Let's talk about your{" "}
+              <span className="text-[var(--brand)]">IT needs.</span>
+            </h2>
+            <p className="section-copy">
+              Have a project in mind or need technical assistance? Send us a
+              message and tell us how we can help.
+            </p>
+            <div className="mt-9 space-y-5">
+              <div className="flex gap-4">
+                <div className="icon-tile">
+                  <MailIcon />
+                </div>
+                <div>
+                  <p className="font-bold">Email us</p>
+                  <p className="mt-1 text-sm text-slate-500">
+                    {process.env.NEXT_PUBLIC_COMPANY_EMAIL ||
+                      "info@manygraphix.com"}
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="icon-tile">
+                  <PhoneIcon />
+                </div>
+                <div>
+                  <p className="font-bold">Call or WhatsApp</p>
+                  <p className="mt-1 text-sm text-slate-500">
+                    {process.env.NEXT_PUBLIC_COMPANY_PHONE ||
+                      "+263 77 123 4567"}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_15px_45px_rgba(16,36,58,.05)] md:p-9">
+            <h3 className="mb-2 text-xl font-extrabold">Send us a message</h3>
+            <p className="mb-6 text-sm text-slate-500">
+              We'll get back to you as soon as we can.
+            </p>
+            <ContactForm />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
+function MailIcon() {
+  return (
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m3 7 9 6 9-6" />
+    </svg>
+  );
+}
+function PhoneIcon() {
+  return (
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+    >
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.4 2.8a2 2 0 0 1-.6 1.7L7.6 9.5a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 1.7-.6l2.8.4a2 2 0 0 1 1.6 1.9Z" />
+    </svg>
+  );
+}
