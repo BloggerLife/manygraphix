@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import "./globals.css";
+import "@fontsource-variable/open-sans";
+import "@fontsource-variable/inter";
 import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
 import "@fortawesome/fontawesome-free/css/brands.min.css";
 import Header from "@/components/Header";
 import FloatingSocials from "@/components/FloatingSocials";
 import Footer from "@/components/Footer";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
 
 export const metadata: Metadata = {
   title: "ManyGraphix | Networking, Computer Systems & IT Support",
@@ -23,7 +19,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body>
         <Header />
         {children}
         <Footer />
