@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
+import "@fortawesome/fontawesome-free/css/brands.min.css";
 import Header from "@/components/Header";
 import FloatingSocials from "@/components/FloatingSocials";
 import Footer from "@/components/Footer";

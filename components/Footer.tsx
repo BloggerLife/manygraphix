@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Facebook, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-[#061f50] text-white">
@@ -15,13 +15,13 @@ export default function Footer() {
           <a
             href={
               process.env.NEXT_PUBLIC_FACEBOOK_URL ||
-              "https://www.facebook.com/"
+              "https://www.facebook.com/share/1FCqpgn6wW/?mibextid=wwXIfr"
             }
             target="_blank"
             rel="noreferrer"
             className="mt-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
           >
-            <Facebook size={18} />
+            <i className="fa-brands fa-facebook text-xl" aria-hidden="true" />
           </a>
         </div>
         <div>
